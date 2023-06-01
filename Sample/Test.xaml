@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sample.Test" >
+    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" HorizontalOptions="Start">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Text="Colors" HorizontalOptions="FillAndExpand"
+                   Style="{StaticResource SubHeaderText}" />
+            <Picker Grid.Row="1" x:Name="pickerColors" HorizontalOptions="Fill" >
+            </Picker>
+        </Grid>
+        <Label Grid.Row="1" Text="" x:Name="labelColorName"/>
+    </Grid>
+</ContentPage>
