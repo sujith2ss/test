@@ -13,8 +13,7 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <Label Grid.Row="0" Text="Colors" HorizontalOptions="FillAndExpand"
-                   Style="{StaticResource SubHeaderText}" />
+            <Label Grid.Row="0" Text="Colors" HorizontalOptions="FillAndExpand"/>
             <Picker Grid.Row="1" x:Name="pickerColors" HorizontalOptions="Fill" >
             </Picker>
         </Grid>
